@@ -19,6 +19,10 @@ Route::get('/', function () {
 
 Route::get('/', function () {
     $database = config('comics');
-
     return view('welcome')->with('comics', $database);
 });
+
+Route::get('/single/{id}', function ($id) {
+    $database = config('comics');
+    return view('details')->with('comic', $database[$id]);
+})->name('detail');

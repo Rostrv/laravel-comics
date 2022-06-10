@@ -10345,7 +10345,7 @@ section .cover {
 }
 
 .site_footer {
-  background-image: url("@/assets/img/footer-bg.jpg");
+  background-image: url("/img/footer-bg.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10409,4 +10409,57 @@ section .cover {
 }
 .site_footer .icons li {
   margin-right: 20px;
+}
+
+.comics-img {
+  bottom: -60px;
+  border: solid 1px white;
+  height: 300px;
+  position: relative;
+}
+.comics-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-blue {
+  height: 80px;
+  background-color: #0d6efd;
+}
+
+.text-book {
+  top: 0;
+}
+
+.text-gallery {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.text-book,
+.text-gallery {
+  position: absolute;
+  background-color: #00A9D9;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.bg-green {
+  background-color: #55BA59;
+  color: white;
+  border-bottom: solid 1px #357739;
+}
+.bg-green .col-3 {
+  border-left: solid 1px #357739;
+}
+
+.artist,
+.writers,
+.series {
+  color: #04abd8;
+  text-decoration: none;
 }

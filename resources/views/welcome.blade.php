@@ -8,14 +8,18 @@
 
         <div class="row justify-content-evenly">
             @foreach ($comics as $index => $comic)
+
             <div class="col-2 p-0 text-center">
-                <div class="comic-container" style="width: 200px">
-                    <img class="cover" src="{{ $comic['thumb'] }}">
-                    <div class="p-1">
-                        <h5> {{ $comic['series'] }} </h5>
+                <a class="text-decoration-none" href="{{route('detail',$index)}}">
+                    <div class="comic-container" style="width: 200px">
+                        <img class="cover" src="{{ $comic['thumb'] }}">
+                        <div class="p-1">
+                            <h5> {{ $comic['series'] }} </h5>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
+
             @endforeach
         </div>
     </div>
