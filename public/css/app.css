@@ -10276,8 +10276,137 @@ nav a:hover {
 
 .jumbo {
   height: 400px;
-  background-image: url("/laravel-comics/public/img/jumbotron.jpg");
+  background-image: url("./../img/jumbotron.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+section {
+  background-color: black;
+}
+section .container {
+  padding-top: 50px;
+}
+section h5, section .h5 {
+  color: white;
+}
+section .col-2 {
+  width: auto;
+}
+section .up {
+  top: -20px;
+}
+section .cover {
+  width: 200px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.btn-load {
+  color: white;
+  font-weight: bold;
+  background-color: #0282f9;
+  border: 2px solid #0282f9;
+  padding: 0.5rem 2rem;
+}
+
+.middle {
+  background-color: #0282f9;
+  padding: 1rem 0;
+}
+.middle img {
+  width: 50px;
+  margin-right: 15px;
+}
+.middle .container {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.middle ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.middle a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.middle .blue {
+  padding: 0;
+}
+
+.site_footer {
+  background-image: url("@/assets/img/footer-bg.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.site_footer .down {
+  height: 400px;
+  padding: 0;
+}
+.site_footer .col-6 {
+  height: 400px;
+}
+.site_footer .logo {
+  background-image: url("/img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.site_footer .col-3 {
+  text-align: start;
+  height: 100%;
+}
+.site_footer ul {
+  padding: 0;
+  list-style: none;
+}
+.site_footer h3, .site_footer .h3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+.site_footer a {
+  text-decoration: none;
+  color: lightslategrey;
+}
+.site_footer a:hover {
+  color: white;
+}
+.site_footer .footer-bottom {
+  background-color: rgb(58, 56, 56);
+}
+.site_footer .bottom {
+  padding: 0;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site_footer button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #0282f9;
+  padding: 1rem;
+}
+.site_footer h4, .site_footer .h4 {
+  color: #0282f9;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.site_footer .icons li {
+  margin-right: 20px;
 }
