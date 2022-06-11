@@ -27,18 +27,31 @@
             </div>
         </div>
         <div class="container bottom">
-            <div><img class="logo" alt="dc-logo" src="{{ asset('img/dc-logo.png') }}"></div>
+            <div>
+                <a href="{{ route('home')}}">
+                    <img class="logo" alt="dc-logo" src="{{ asset('img/dc-logo.png') }}">
+                </a>
+            </div>
             <nav>
-                <a href="#">characters</a>
-                <a href="#" class="active">comics</a>
-                <a href="#">movies</a>
-                <a href="#">tv</a>
-                <a href="#">games</a>
-                <a href="#">collectibles</a>
-                <a href="#">videos</a>
-                <a href="#">fans</a>
-                <a href="#">news</a>
-                <a href="#">shop</a>
+                <a class="{{Route::currentRouteName() === 'characters' ? 'active' : ''}}" href="{{ route('characters')}}">characters</a>
+
+                <a class="{{Route::currentRouteName() === 'comics' ? 'active' : ''}}" href="{{ route('comics')}}">comics</a>
+
+                <a class="{{Route::currentRouteName() === 'movies' ? 'active' : ''}}" href="{{ route('movies')}}">movies</a>
+
+                <a class="{{Route::currentRouteName() === 'tv' ? 'active' : ''}}" href="{{ route('tv')}}">tv</a>
+
+                <a class="{{Route::currentRouteName() === 'games' ? 'active' : ''}}" href="{{ route('games')}}">games</a>
+
+                <a class="{{Route::currentRouteName() === 'collectibles' ? 'active' : ''}}" href="{{ route('collectibles')}}">collectibles</a>
+
+                <a class="{{Route::currentRouteName() === 'videos' ? 'active' : ''}}" href="{{ route('videos')}}">videos</a>
+
+                <a class="{{Route::currentRouteName() === 'fans' ? 'active' : ''}}" href="{{ route('fans')}}">fans</a>
+
+                <a class="{{Route::currentRouteName() === 'news' ? 'active' : ''}}" href="{{ route('news')}}">news</a>
+
+                <a class="{{Route::currentRouteName() === 'shop' ? 'active' : ''}}" href="{{ route('shop')}}">shop</a>
             </nav>
             <div class="right-menu-navbar">
                 <div class="content-right-menu-navbar">

@@ -8,7 +8,6 @@
 
         <div class="row justify-content-evenly">
             @foreach ($comics as $index => $comic)
-
             <div class="col-2 p-0 text-center">
                 <a class="text-decoration-none" href="{{route('detail',$index)}}">
                     <div class="comic-container" style="width: 200px">
